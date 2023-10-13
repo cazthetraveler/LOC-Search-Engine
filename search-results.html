@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+<div class="row m-3">
+    <div class="col-3">
+        <div>
+            <h1>Library of Congress Search Engine</h1>
+        </div>
+        <div>
+            <form>
+                <input id="search-bar" class="form-control mb-3" type="text" placeholder="Search...">
+                <select id="format-select" name="format-select" class="form-select mb-3">
+                    <option disabled selected hidden>Select a format...</option>
+                    <option value="">None</option>
+                    <option value="audio">Audio Recordings</option>
+                    <option value="books">Books/Printed Material</option>
+                    <option value="film-and-videos">Film, Videos</option>
+                    <option value="legislation">Legislation</option>
+                    <option value="manuscripts">Manuscripts/Mixed Material</option>
+                    <option value="maps">Maps</option>
+                    <option value="newspapers">Newspapers</option>
+                    <option value="photos">Photo, Print, Drawing</option>
+                    <option value="notated-music">Printed Music</option>
+                    <option value="web-archives">Web Archives</option>
+                </select>
+            </form>
+            <button type="button" id="submit-button" class="btn btn-success w-100 mb-3">Search</button>
+            <a href="./index.html" class="link-offset-2 link-underline link-underline-opacity-0 text-light"><button type="button" id="go-back" class="btn btn-danger w-100">Go Back</button></a>
+        </div>
+    </div>
+
+    <div class="col-9">
+        <div>
+            <h1 id="results-heading" class="mb-5"></h2>
+        </div>
+
+        <div id="results"></div>
+    </div>
+</div>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="./assets/js/search.js"></script>
+
+</html>
