@@ -9,3 +9,5 @@
 ## Deployed Link and Repository
 
 https://github.com/cazthetraveler/LOC-Search-Engine
+
+https://cazthetraveler.github.io/LOC-Search-Engine/
